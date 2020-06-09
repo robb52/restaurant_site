@@ -3,5 +3,145 @@
 }
 
 body {
-    
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    background: linear-gradient(100deg, #f93d66, #6d47d9);
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: .5em;
+    padding: 20px;
+    margin-top: 3em;
+}
+
+li {
+    margin: 1em 2em;
+}
+
+a {
+    font-weight: 900;
+    text-decoration: none;
+    color: #333;
+    background: #ffc600;
+    padding: 10px 20px;
+    text-transform: uppercase;  
+}
+
+@media (max-width: 475px) {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 670px) {
+    ul {
+        margin: 1em;
+        
+    }
+}
+
+@media (min-width: 860px) {
+    nav {
+        padding-right: 2em;
+    }
+}
+
+
+
+.hero {
+    background: #fff;
+    background-image: url(../images/taco.jpeg);
+    min-height: 300px;
+    background-size: cover; 
+    padding: 3em 0 0 1em;  
+}
+
+.hero h1,
+.hero p {
+    font-weight: 900;
+    letter-spacing: -1px;
+    background: #ffc600; 
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.hero h1 {
+    font-size: 1.8em;
+    width: 260px;
+}
+
+.hero p {
+    font-size: .95em;
+    padding: 10px;
+    width: 165px;
+}
+
+.price-1,
+.price-2 {
+    display: grid;
+    background: #ffc600;
+    text-align: center;
+    margin: 1em 2em;
+    padding: 20px 0;
+}
+
+.price-t,
+.price-b {
+    font-size: 2em;
+    font-weight: 100;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.price-1 p,
+.price-2 p {
+    margin: 0;
+    padding: 0;
+}
+
+.title-1,
+.title-2 {
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+@media (min-width: 660px) {
+    header {
+    grid-area: hero;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .top {
+        display: grid;
+        grid-template-areas:
+            "hero hero price-1"
+            "hero hero price-2";
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .price-1 {   
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        margin: 0 1em;
+    }
+
+    .price-2 {
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        margin: 1em 1em 0 1em;
+    }
 }
