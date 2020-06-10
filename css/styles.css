@@ -9,6 +9,11 @@ body {
     background: linear-gradient(100deg, #f93d66, #6d47d9);
 }
 
+main {
+    display: grid;
+    grid-gap: 20px;
+}
+
 ul {
     list-style: none;
     text-align: center;
@@ -59,7 +64,8 @@ a {
     background-image: url(../images/taco.jpeg);
     min-height: 300px;
     background-size: cover; 
-    padding: 3em 0 0 1em;  
+    padding: 3em 0 0 1em;
+     
 }
 
 .hero h1,
@@ -87,13 +93,13 @@ a {
     display: grid;
     background: #ffc600;
     text-align: center;
-    margin: 1em 2em;
+    margin: 1em 20px;
     padding: 20px 0;
 }
 
 .price-t,
 .price-b {
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 100;
     margin: 0;
     padding: 20px 0;
@@ -143,5 +149,43 @@ a {
         justify-items: center;
         align-content: center;
         margin: 1em 1em 0 1em;
+    }
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+    letter-spacing: -1px;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.icon {
+    font-size: 2.8rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+.feature p {
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    color: rgb(141, 137, 137);
+    margin: 0;
+    padding-top: 10px;
+}
+
+@media (min-width: 800px) {
+    .feature {
+        margin: 10px 10px;
+        width: 90%;
     }
 }
