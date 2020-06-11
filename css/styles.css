@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
     background: linear-gradient(100deg, #f93d66, #6d47d9);
+    letter-spacing: -1px;
 }
 
 main {
@@ -176,7 +177,6 @@ h3 {
 .feature p {
     font-size: .95rem;
     font-weight: 700;
-    letter-spacing: -1px;
     line-height: 1.2;
     color: rgb(141, 137, 137);
     margin: 0;
@@ -189,3 +189,71 @@ h3 {
         width: 90%;
     }
 }
+
+.about {
+    background: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about p {
+    font-size: .95rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.about button {
+    text-transform: capitalize;
+    font-size: .85rem;
+    font-weight: 500;
+    background: #ffc600;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.details h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+@media (min-width: 680px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center; 
+        text-align: left; 
+        padding: 3em;  
+    }
+
+   img {
+    max-width: 100%;
+   
+   }
+
+   .details {
+       max-width: 85%;
+   }     
+}
+
+@media (min-width: 930px) {
+    .about {
+        color: red;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+    }
+
+    .details {
+        max-width: 50%;
+    }
+}
+
