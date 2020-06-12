@@ -258,8 +258,8 @@ img {
 
 .gallery {
     display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
     margin: 20px;
 }
@@ -288,4 +288,9 @@ img {
 
 .gallery h2::after {
     background: linear-gradient(to left, rgba(255,0,0,0), RGBA(255,198,0,1));
+}
+
+.gallery img {
+    min-width: 100%;
+   
 }
